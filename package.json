@@ -1,0 +1,24 @@
+{
+  "name": "todo-bun-elysia-htmx",
+  "module": "src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "dev": "bun --hot run src/index.tsx",
+    "dev:tailwind": "tailwindcss build -i static/css/base.css -o static/css/tailwind.css --watch",
+    "build:tailwind": "tailwindcss build -i static/css/base.css -o static/css/tailwind.css"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "tailwindcss": "^3.4.1",
+    "typed-html": "^3.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.8.0",
+    "@elysiajs/static": "^0.8.1",
+    "elysia": "^0.8.17"
+  }
+}
